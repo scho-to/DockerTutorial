@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:14
 
 WORKDIR /app
 
@@ -8,8 +8,8 @@ RUN npm install
 
 COPY . /app/
 
-EXPOSE 3000
+EXPOSE 80
 
-# VOLUME [ "/app/node_modules" ]
+VOLUME [ "/app/node_modules" ]
 
 CMD [ "npm", "start" ]
