@@ -1,0 +1,8 @@
+docker build -t goals-node .
+docker build -t goals-react .
+
+docker run --name mongodb -d --rm --network goals-app -v goals-db:/data/db -e MONGO_INITDB_ROOT_USERNAME=Max -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
+
+docker run --name goals-backend --rm -d --network goals-app -p 8000:80 goals-node
+
+docker run --name goals-frontend -d --rm -p 8001:3000 -it goals-react
