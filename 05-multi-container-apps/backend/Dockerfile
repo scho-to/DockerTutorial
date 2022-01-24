@@ -8,6 +8,13 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+EXPOSE 8000
 
-CMD [ "node", "app.js" ]
+VOLUME [ "backend-logs:/app/logs" ]
+
+VOLUME [ "/app/node_modules" ]
+
+ENV MONGODB_USERNAME=root
+ENV MONGODB_PASSWORD=secret
+
+CMD [ "npm", "start" ]
