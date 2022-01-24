@@ -16,3 +16,8 @@
 ::1 - - [07/Sep/2020:16:01:39 +0000] "OPTIONS /goals/5f56595fd34d141774eb6441 HTTP/1.1" 200 6 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
 ::1 - - [07/Sep/2020:16:01:39 +0000] "DELETE /goals/5f56595fd34d141774eb6441 HTTP/1.1" 200 27 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
 ::ffff:172.18.0.1 - - [24/Jan/2022:10:25:13 +0000] "GET /goals HTTP/1.1" 200 62 "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Jan/2022:10:31:34 +0000] "GET /goals HTTP/1.1" 304 - "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Jan/2022:10:32:17 +0000] "GET /goals HTTP/1.1" 304 - "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+::ffff:142.93.34.203 - - [24/Jan/2022:10:32:24 +0000] "GET / HTTP/1.0" 404 139 "-" "-"
+::ffff:172.18.0.1 - - [24/Jan/2022:10:32:42 +0000] "GET /goals HTTP/1.1" 304 - "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+::ffff:172.18.0.1 - - [24/Jan/2022:10:36:55 +0000] "GET /goals HTTP/1.1" 304 - "http://localhost:8001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"

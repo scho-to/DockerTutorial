@@ -5,4 +5,4 @@ docker run --name mongodb -d --rm --network goals-app -v goals-db:/data/db -e MO
 
 docker run --name goals-backend -v $(pwd):/app -e MONGODB_USERNAME=Max --rm -d --network goals-app -p 8000:8000 goals-node
 
-docker run --name goals-frontend -d --rm -p 8001:3000 -it goals-react
+docker run -v $(pwd)/src:/app/src --name goals-frontend -d --rm -p 8001:3000 -it goals-react
