@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  example1:
+    build: ./example-1
+    ports:
+      - '8000:80'
+  example2:
+    build: ./example-2
+    stdin_open: true
+    tty: true
+  
+  assignment_node:
+    build: ./assignment-1/node-app
+    ports:
+      - '8001:3000'
+  assignment_python:
+    build: ./assignment-1/python-app
+    stdin_open: true
+    tty: true

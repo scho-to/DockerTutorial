@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - data:/data/db
+  example1:
+    build: ./example-1
+    ports:
+      - '8000:3000'
+    depends_on:
+      - mongodb
+
+volumes:
+  data:

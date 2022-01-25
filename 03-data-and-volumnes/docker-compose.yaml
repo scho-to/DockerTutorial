@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  example1:
+    build: ./example-1
+    ports:
+      - '8000:80'
+    volumes:
+      - ./example-1:/app
+      - /app/node_modules
+
+volumes:
+  feedback:
